@@ -1,0 +1,96 @@
+body {
+    background-color:$main-background;
+    color:$main-text-color;
+    font-family:$main-text-fonts;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    // width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ .section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+ }  
+
+.heading {
+    color:$second-text-color;
+    font-weight: 700;
+    font-size:$heading-font-size;
+    line-height: 42px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.visualy-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@media screen and (max-width: 767px) { 
+ .container{
+    max-width: 480px;
+    position: relative;
+ }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .section {
+.section {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    }
+}
+

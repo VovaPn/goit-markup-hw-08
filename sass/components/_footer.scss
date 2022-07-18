@@ -1,0 +1,264 @@
+
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color:$third-background;
+    color:$main-background;
+
+    &--align{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }    
+}
+
+.footer__logo{
+    margin-bottom: 20px;    
+    color:$accent;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    
+    &--second-color{
+        color:$main-background
+    }
+}
+
+
+.footer__address{    
+    font-style: inherit;
+    line-height: 1.71;
+
+    &>li:not(:last-of-type){
+        margin-bottom: 8px;
+    }
+
+    &--margin{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    &--align {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer__contacts--color{
+    color:rgba(255, 255, 255, 0.6) ;
+}
+
+.footer__headings{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    
+    font-weight: 700;
+    text-transform: uppercase;
+    color:$main-background;
+}
+
+.footer__social-links--position{
+    display: flex;
+    margin-bottom: 60px;
+
+    &>li:not(:last-child){
+        margin-right: 10px;
+    }
+}
+
+.footer__icon{
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    overflow: visible;
+    fill: $main-background;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color $transformation;
+
+    &:hover,
+    &:focus{
+        background-color: $accent;
+    }        
+}
+
+.mailing-list--position{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+   
+}
+
+.mailing-list__input{ 
+    display: flex;
+    margin-bottom: 20px;   
+    height: 50px;
+    width:100%;            
+    padding: 15px 16px;
+    border-width: 1px;
+    border-radius:$border-radius;
+    border-color: rgba(255, 255, 255, 0.3);
+    background-color: $third-background;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.mailing-list__button{
+    display: flex;
+    width: 200px;
+    height: 50px;    
+    align-items: center;
+    border-radius:$border-radius;
+    border: none;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    background-color:$accent;
+    color:$main-background;
+    transition: background-color $transformation;
+
+    &--position{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;               
+    }
+
+    &:active{
+        background-color: $button-active-background-color;
+    }
+}
+
+.mailing-list__icon{
+    display: inline-block;
+    margin-left: 10px;
+    fill: $main-background;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .footer__address{
+//     margin-top: 20px;
+//     margin-right: 70px;
+//     font-style: inherit;
+//     line-height: 1.71;
+// }
+
+// .footer__contacts--color{
+//     color:rgba(255, 255, 255, 0.6) ;
+// }
+
+// .footer__headings{
+//     margin-bottom: 20px;
+//     font-weight: 700;
+//     text-transform: uppercase;
+//     color:$main-background;
+// }
+
+// .footer__social-links--position{
+//     display: flex;
+
+//     &>li:not(:last-child){
+//         margin-right: 10px;
+//     }
+// }
+
+// .footer__icon{
+//     width: 44px;
+//     height: 44px;
+//     padding: 12px;
+//     border-radius: 50%;
+//     overflow: visible;
+//     fill: $main-background;
+//     background-color: rgba(255, 255, 255, 0.1);
+//     transition: background-color $transformation;
+
+//     &:hover,
+//     &:focus{
+//         background-color: $accent;
+//     }        
+// }
+
+// .mailing-list--position{
+//     display: inline-block;
+//     margin-left: auto;
+// }
+
+// .mailing-list__input{
+//     width: 358px;
+//     height: 50px;
+//     padding: 15px 16px;
+//     border-width: 1px;
+//     border-radius:$border-radius;
+//     border-color: rgba(255, 255, 255, 0.3);
+//     background-color: $third-background;
+//     color: rgba(255, 255, 255, 0.6);
+// }
+
+// .mailing-list__button{
+//     display: flex;
+//     width: 200px;
+//     height: 50px;
+//     margin-left: 12px;
+//     border: none;
+//     border-radius:$border-radius;
+//     align-items: center;
+//     justify-content: center;
+//     text-align: center;
+//     font-weight: 700;
+//     font-size: 16px;
+//     letter-spacing: 0.06em;
+//     background-color:$accent;
+//     color:$main-background;
+//     transition: background-color $transformation;
+
+//     &--position{
+//         display: flex;
+//     }
+
+//     &:active{
+//         background-color: $button-active-background-color;
+//     }
+// }
+
+// .mailing-list__icon{
+//     display: inline-block;
+//     margin-left: 10px;
+//     fill: $main-background;
+// }

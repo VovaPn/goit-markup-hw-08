@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <!--шапка-->
+    <header class="header">
+        <div class="container header__nav">
+            <a href="./index.html" class="header__logo">Web<span class="header__logo--second-color">Studio</span></a>
+            <button type="button" class="menu__button is-open" aria-expanded="false" aria-controls="menu-container"
+                data-menu-button>
+                <svg class="header__menu-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-cross__header" href="./image/symbol-defs.svg#icon-cross"></use>
+                    <use class="icon-menu" href="./image/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
+    
+            <div class="menu__container" data-menu>
+                <nav class="">
+    
+                    <ul class="nav">
+                        <li>
+                            <a href="./index.html" class="nav__link">Студия</a>
+                        </li>
+                        <li>
+                            <a href="./portfolio.html" class="nav__link nav__link--current">Портфолио</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__contacts">
+                    <ul class="contacts--position">
+                        <li>
+    
+                            <a href="mailto:info@devstudio.com" class="header__contact header__contact--mail"><svg
+                                    class="header__mail-icon">
+                                    <use class="" href="./image/symbol-defs.svg#icon-letter">
+                                    </use>
+                                </svg>info@devstudio.com</a>
+                        </li>
+                        <li class="header__contacts--margin">
+                            <a href="tel:+380961111111" class="header__contact header__contact--phone  "><svg
+                                    class="header__phone-icon">
+                                    <use href="./image/symbol-defs.svg#icon-smartphone">
+                                    </use>
+                                </svg>+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                    <ul class="nav__social">
+                        <li><a href="https://www.instagram.com" class="header__social">Instagram</a> </li>
+                        <li class="nav__social--line">|</li>
+                        <li><a href="https://www.twitter.com" class="header__social">Twitter</a> </li>
+                        <li class="nav__social--line">|</li>
+                        <li><a href="https://www.facebook.com" class="header__social">Facebook</a> </li>
+                        <li class="nav__social--line">|</li>
+                        <li><a href="https://www.linkedin.com" class="header__social">Linkedin</a> </li>
+    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+   <!-- main -->
+    <main>
+        
+
+       <!-- filters -->
+<section class="section">
+<div class="container">    
+    <h1 class="visualy-hidden">Фильтр</h1>
+    <ul class="filter__buttons--position">
+        <li>
+<button type="button" class="filter__button">Все</button>
+        </li>
+        <li>
+<button type="button" class="filter__button">Веб-сайты</button>
+        </li>
+        <li>
+<button type="button" class="filter__button">Приложения</button>
+        </li>
+        <li>
+<button type="button" class="filter__button">Дизайн</button>
+        </li>
+        <li>
+<button type="button" class="filter__button">Маркетинг</button>
+        </li>        
+    </ul>
+   
+ 
+   <!-- projects -->
+
+      <ul class="projects">
+          <li class="projects__item">
+<a class="projects__link" href="">
+    <div class="projects__image">
+    <picture>
+        <source srcset="./image/portolio480_1.jpg 1x, ./image/portolio480_1@2x.jpg 2x" media="(max-width:767px)">
+        <source srcset="./image/portolio768_1.jpg 1x, ./image/portolio768_1@2x.jpg 2x" media="(min-width:768px) and (max-width:1199px)">
+        <source srcset="./image/portolio1200_1.jpg 1x, ./image/portolio1200_1@2x.jpg 2x" media="(min-width:1200px)">
+        <img srcset="./image/portolio480_1.jpg 480w, ./image/portolio480_1@2x.jpg 960w" src="./image/portolio480_1.jpg"
+            alt="Технокряк">
+    </picture>
+<p class="projects__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+исчерпывающие сведения о компании или частном лице.</p>
+</div>
+    <div class="projects__card">
+ <h2 class="projects__heading">Технокряк</h2>
+<p class="projects__type">Веб-сайт</p>   
+</div></a>
+</li>
+
+<li class="projects__item">
+<a class="projects__link" href="">
+    <div class="projects__image">
+    <picture>
+        <source srcset="./image/portolio480_2.jpg 1x, ./image/portolio480_2@2x.jpg 2x" media="(max-width:767px)">
+        <source srcset="./image/portolio768_2.jpg 1x, ./image/portolio768_2@2x.jpg 2x" media="(min-width:768px) and (max-width:1199px)">
+        <source srcset="./image/portolio1200_2.jpg 1x, ./image/portolio1200_2@2x.jpg 2x" media="(min-width:1200px)">
+        <img srcset="./image/portolio480_2.jpg 480w, ./image/portolio480_2@2x.jpg 960w" src="./image/portolio480_2.jpg"
+            alt="Постер New Orlean vs Golden Star">
+    </picture>
+        <p class="projects__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+            Все это позволит посетителю получить
+            исчерпывающие сведения о компании или частном лице.</p>
+    </div>
+<div class="projects__card">
+    <h2 class="projects__heading">Постер New Orlean vs Golden Star</h2>
+    <p class="projects__type">Дизайн</p>
+</div></a>
+
+          </li>         
+           <li class="projects__item">
+<a class="projects__link" href="">
+    <div class="projects__image">
+        <picture>
+            <source srcset="./image/portolio480_3.jpg 1x, ./image/portolio480_3@2x.jpg 2x" media="(max-width:767px)">
+            <source srcset="./image/portolio768_3.jpg 1x, ./image/portolio768_3@2x.jpg 2x"
+                media="(min-width:768px) and (max-width:1199px)">
+            <source srcset="./image/portolio1200_3.jpg 1x, ./image/portolio1200_3@2x.jpg 2x" media="(min-width:1200px)">
+            <img srcset="./image/portolio480_3.jpg 480w, ./image/portolio480_3@2x.jpg 960w" src="./image/portolio480_3.jpg"
+                alt="Ресторан Seafood">
+        </picture>
+        <p class="projects__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+            Все это позволит посетителю получить
+            исчерпывающие сведения о компании или частном лице.</p>
+    </div><div class="projects__card">
+    <h2 class="projects__heading">Ресторан Seafood</h2>
+    <p class="projects__type">Приложение</p>
+</div></a>
+
+          </li>
+          <li class="projects__item">
+<a class="projects__link" href="">
+    <div class="projects__image">
+        <picture>
+            <source srcset="./image/portolio480_4.jpg 1x, ./image/portolio480_4@2x.jpg 2x" media="(max-width:767px)">
+            <source srcset="./image/portolio768_4.jpg 1x, ./image/portolio768_4@2x.jpg 2x"
+                media="(min-width:768px) and (max-width:1199px)">
+            <source srcset="./image/portolio1200_4.jpg 1x, ./image/portolio1200_4@2x.jpg 2x" media="(min-width:1200px)">
+            <img srcset="./image/portolio480_4.jpg 480w, ./image/portolio480_4@2x.jpg 960w" src="./image/portolio480_4.jpg"
+                alt="Проект Prime">
+        </picture>
+        <p class="projects__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+            Все это позволит посетителю получить
+            исчерпывающие сведения о компании или частном лице.</p>
+    </div><div class="projects__card">
+    <h2 class="projects__heading">Проект Prime</h2>
+    <p class="projects__type">Маркетинг</p>
+</div></a>
+
+          </li>
+          <li class="projects__item">
+<a class="projects__link" href="">
+    <div class="projects__image">
+        <picture>
+            <source srcset="./image/portolio480_5.jpg 1x, ./image/portolio480_5@2x.jpg 2x" media="(max-width:767px)">
+            <source srcset="./image/portolio768_5.jpg 1x, ./image/portolio768_5@2x.jpg 2x"
+                media="(min-width:768px) and (max-width:1199px)">
+            <source srcset="./image/portolio1200_5.jpg 1x, ./image/portolio1200_5@2x.jpg 2x" media="(min-width:1200px)">
+            <img srcset="./image/portolio480_5.jpg 480w, ./image/portolio480_5@2x.jpg 960w" src="./image/portolio480_5.jpg"
+                alt="Проект Boxes">
+        </picture>
+        <p class="projects__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+            Все это позволит посетителю получить
+            исчерпывающие сведения о компании или частном лице.</p>
+    </div><div class="projects__card">
+    <h2 class="projects__heading">Проект Boxes</h2>
+    <p class="projects__type">Приложение</p>
+</div></a>
+
+          </li>
+          <li class="projects__item">
+<a class="projects__link" href="">
+    <div class="projects__image">
+        <picture>
+            <source srcset="./image/portolio480_6.jpg 1x, ./image/portolio480_6@2x.jpg 2x" media="(max-width:767px)">
+            <source srcset="./image/portolio768_6.jpg 1x, ./image/portolio768_6@2x.jpg 2x"
+                media="(min-width:768px) and (max-width:1199px)">
+            <source srcset="./image/portolio1200_6.jpg 1x, ./image/portolio1200_6@2x.jpg 2x" media="(min-width:1200px)">
+            <img srcset="./image/portolio480_6.jpg 480w, ./image/portolio480_6@2x.jpg 960w" src="./image/portolio480_6.jpg"
+                alt="Inspiration has no Borders">
+        </picture>
+        <p class="projects__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+            Все это позволит посетителю получить
+            исчерпывающие сведения о компании или частном лице.</p>
+    </div><div class="projects__card">
+    <h2 class="projects__heading">Inspiration has no Borders</h2>
+    <p class="projects__type">Веб-сайт</p>
+</div></a>
+
+          </li>
+          <li class="projects__item">
+<a class="projects__link" href="">
+    <div class="projects__image">
+        <picture>
+            <source srcset="./image/portolio480_7.jpg 1x, ./image/portolio480_7@2x.jpg 2x" media="(max-width:767px)">
+            <source srcset="./image/portolio768_7.jpg 1x, ./image/portolio768_7@2x.jpg 2x"
+                media="(min-width:768px) and (max-width:1199px)">
+            <source srcset="./image/portolio1200_7.jpg 1x, ./image/portolio1200_7@2x.jpg 2x" media="(min-width:1200px)">
+            <img srcset="./image/portolio480_7.jpg 480w, ./image/portolio480_7@2x.jpg 960w" src="./image/portolio480_7.jpg"
+                alt="Издание Limited Edition">
+        </picture>
+        <p class="projects__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+            Все это позволит посетителю получить
+            исчерпывающие сведения о компании или частном лице.</p>
+    </div><div class="projects__card">
+    <h2 class="projects__heading">Издание Limited Edition</h2>
+    <p class="projects__type">Дизайн</p>
+</div></a>
+
+          </li>
+          <li class="projects__item">
+<a class="projects__link" href="">
+    <div class="projects__image">
+        <picture>
+            <source srcset="./image/portolio480_8.jpg 1x, ./image/portolio480_8@2x.jpg 2x" media="(max-width:767px)">
+            <source srcset="./image/portolio768_8.jpg 1x, ./image/portolio768_8@2x.jpg 2x"
+                media="(min-width:768px) and (max-width:1199px)">
+            <source srcset="./image/portolio1200_8.jpg 1x, ./image/portolio1200_8@2x.jpg 2x" media="(min-width:1200px)">
+            <img srcset="./image/portolio480_8.jpg 480w, ./image/portolio480_8@2x.jpg 960w" src="./image/portolio480_8.jpg"
+                alt="Проект LAB">
+        </picture>
+        <p class="projects__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+            Все это позволит посетителю получить
+            исчерпывающие сведения о компании или частном лице.</p>
+    </div><div class="projects__card">
+    <h2 class="projects__heading">Проект LAB</h2>
+    <p class="projects__type">Маркетинг</p>
+</div></a>
+
+          </li>
+          <li class="projects__item">
+<a class="projects__link" href="">
+    <div class="projects__image">
+        <picture>
+            <source srcset="./image/portolio480_9.jpg 1x, ./image/portolio480_9@2x.jpg 2x" media="(max-width:767px)">
+            <source srcset="./image/portolio768_9.jpg 1x, ./image/portolio768_9@2x.jpg 2x"
+                media="(min-width:768px) and (max-width:1199px)">
+            <source srcset="./image/portolio1200_9.jpg 1x, ./image/portolio1200_9@2x.jpg 2x" media="(min-width:1200px)">
+            <img srcset="./image/portolio480_9.jpg 480w, ./image/portolio480_9@2x.jpg 960w" src="./image/portolio480_9.jpg"
+                alt="Веб-сайт">
+        </picture>
+        <p class="projects__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+            Все это позволит посетителю получить
+            исчерпывающие сведения о компании или частном лице.</p>
+    </div><div class="projects__card">
+    <h2 class="projects__heading">Growing Business</h2>
+    <p class="projects__type">Приложение</p>
+</div></a>
+
+          </li>
+      </ul>
+    </div>
+    </section>
+    
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container footer--align">
+            <div class="footer__address--margin">
+                <a href="./index.html" class="footer__logo">Web<span class="footer__logo--second-color">Studio</span></a>
+                <address class="footer__address">
+                    <ul class="footer__address--align">
+                        <li>
+                            г. Киев, пр-т Леси Украинки, 26
+                        </li>
+                        <li>
+                            <a href="mailto:info@devstudio.com" class="footer__contacts--color">info@devstudio.com</a>
+                        </li>
+                        <li>
+                            <a href="tel:+380961111111" class="footer__contacts--color">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+    
+            <div class="footer__headings--position">
+                <p class="footer__headings">присоединяйтесь</p>
+                <ul class="footer__social-links--position">
+    
+                    <li>
+                        <a href="https://www.instagram.com"> <svg class="footer__icon">
+                                <use href="./image/symbol-defs.svg#icon-instagram">
+                                </use>
+                            </svg></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com"> <svg class="footer__icon">
+                                <use href="./image/symbol-defs.svg#icon-twitter">
+                                </use>
+                            </svg></a>
+    
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com"> <svg class="footer__icon">
+                                <use href="./image/symbol-defs.svg#icon-facebook">
+                                </use>
+                            </svg></a>
+    
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com"><svg class="footer__icon">
+                                <use href="./image/symbol-defs.svg#icon-linkedin">
+                                </use>
+                            </svg></a>
+    
+                    </li>
+                </ul>
+    
+            </div>
+    
+            <!-- mailing list -->
+    
+            <form class="mailing-list--position" autocomplete="on">
+                <p class="footer__headings">Подпишитесь на рассылку</p>
+                <label for="email"></label>
+                <div class="mailing-list__button--position">
+                    <input class="mailing-list__input" type="email" name="email" placeholder="E-mail">
+                    <button class="mailing-list__button">Подписаться
+                        <span class="mailing-list__icon">
+                            <svg width="24" height="24" class="">
+                                <use class="" href="./image/symbol-defs.svg#icon-paper-plane">
+                                </use>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+</body>
+</html>

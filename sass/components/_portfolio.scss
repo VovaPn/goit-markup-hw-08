@@ -1,0 +1,142 @@
+
+
+.filter__button {
+    width: max-content;    
+    padding: 6px 22px;
+    border: 0;
+    border-radius:$border-radius;
+    font-family: inherit;
+    background-color:$second-background;
+    color:$second-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    transition: background-color $transformation;
+
+    &:hover,
+    &:focus{
+        background-color: $accent;
+        color: $main-background;
+    }    
+}
+
+.filter__buttons--position>li:not(:last-of-type){
+    margin-right: 8px;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects__link {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    transition:$transformation;
+
+    &:hover,
+    &:focus{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.projects__image {
+    position: relative;
+    overflow: hidden;
+}
+
+.projects__text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color:$main-background;
+    transform: translateY(100%);
+    transition:$transformation;
+    
+    .projects__link:hover &,
+    .projects__link:focus & {
+        transform: translateY(0);
+    }
+}
+
+.projects__card {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.projects__heading {
+    margin-bottom: 4px;
+    color:$second-text-color;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.projects__type {
+    font-size: 16px;
+    line-height: 1.88;
+    color:$main-text-color;
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+.filter__button{    
+    margin-bottom: 15px;
+}
+
+.filter__buttons--position {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;        
+        margin-bottom: 25px;        
+}
+.projects__item:not(:last-of-type) {
+margin-bottom: 30px;
+}
+
+}
+
+
+
+// .filter__buttons--position {
+//     display: flex;
+//     margin-bottom: 50px;
+//     justify-content: center;
+
+//     &>li:not(:last-of-type){
+//         margin-right: 8px;
+//     }
+// }
+
+
+
+// .projects__item{
+//     margin-right: 30px;
+//     margin-bottom: 30px;
+
+//     &:nth-child(3n){
+//         margin-right: 0;
+//     }
+
+//     &:nth-last-child(-n+3){
+//         margin-bottom: 0;
+//     }
+// }
+
+
+
