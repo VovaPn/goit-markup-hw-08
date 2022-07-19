@@ -16,7 +16,7 @@
 
 .modal{
     position: absolute;
-    max-width: 450px;
+    max-width: 528px;
     left: 50%;
     top: 50%;    
     transform: translate(-50%,-50%);
@@ -207,8 +207,14 @@
 
 @media screen and (max-width: 767px) {
     .modal{
-        width: calc(100% - 30px) ;
-        
+        width: calc(100% - 30px) ;        
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+.modal {
+        width: 450px;
     }
 
 
