@@ -129,8 +129,7 @@
 }
 
 .checkbox--margin{
-    display: flex;
-    // margin-left: 13px;
+    display: flex;   
 }
 
 .chek-box__input {
@@ -211,12 +210,20 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 
 .modal {
         width: 450px;
     }
+}
 
+@media screen and (min-width: 1200px) {
 
+.chek-box__text {
+    font-size: 14px;  
+}
 
+.checkbox--margin{
+    justify-content: center;
+}
 }

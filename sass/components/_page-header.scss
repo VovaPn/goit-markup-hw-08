@@ -11,8 +11,16 @@
     color: $accent;
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.2;
+}
+
+.menu__button {
+    display: none;
+}
+
+.nav__social {
+    display: none;
 }
 
 .header__logo--second-color {
@@ -42,6 +50,7 @@
     fill: $main-text-color;
     color: $main-text-color;
     font-weight: 500;
+    font-size: 12px;
     letter-spacing: 0.02em;
     transition: $transformation;
     &:hover,
@@ -150,11 +159,14 @@
 
 .header__contacts{
     margin-top: auto;
-}
 
-.contacts--position{
+    &--position{
     display: flex;
     flex-direction: column-reverse;
+}
+    &--margin {
+        margin-bottom: 32px;
+    }
 }
 
 .header__contact{
@@ -174,27 +186,13 @@
 .header__phone-icon, .header__mail-icon {
     display: none;
 }
-
-.header__contacts--margin{
-    margin-bottom: 32px;
-}
 }
 
-@media screen and (min-width: 768px) {
-
-.menu__button{
-    display: none;
-}
-
-.nav__social{
-    display: none;
-}
-.header__logo{
-    margin-right: auto;
-}
+@media screen and (min-width: 768px){ 
 
 .nav{
     display: flex;
+    margin-left: 88px;
 
 
     &>li:not(:last-of-type){
@@ -204,9 +202,7 @@
 
 .menu__container{
     display: flex;
-    align-items: center;
-   
-        
+    align-items: center;        
 }
 
 .nav__link {
@@ -234,13 +230,56 @@
         }
     }
 }
+.header__contacts{
+    display: flex;
+    align-items: center;
+}
 
-.contacts--position {
+.header__contacts--position {
     display: flex;
     flex-direction: column;
-    margin-left: 84px;
-    font-size: 12px;    
-}    
+    margin-left: 84px;       
+}  
+.header__contact{
+    display: flex;
+    align-items: center;
+    
+    &--mail{
+        margin-bottom: 10px;
+    }
+}  
+}
+
+@media screen and (min-width: 1200px) {
+
+.header__logo {
+        font-size: 26px;
+    }
+
+.nav {
+    display: flex;
+    margin-left: 93px;
+}
+
+.header__contacts--position {    
+    flex-direction:row; 
+    margin-left: 305px;       
+   
+}
+
+.header__contact{
+    font-size: 14px;
+
+    &--mail{
+    margin-right: 30px;
+    margin-bottom: 0;
+}
+}
+
+
+
+
+
 }
 
 
@@ -279,12 +318,6 @@
 //     }
 // }
 
-// .header__contacts {
-//     display: flex;
-//     margin-left: auto;
-// }
-
-
 // .header__contact {
 //     display: flex;
 //     align-items: center;
@@ -305,16 +338,4 @@
 //     &--margin {
 //         margin-right: 50px;
 //     }
-// }
-
-// .header__mail-icon {
-//     width: 16px;
-//     height: 12px;
-//     margin-right: 10px;
-// }
-
-// .header__phone-icon {
-//     width: 10px;
-//     height: 16px;
-//     margin-right: 10px;
 // }

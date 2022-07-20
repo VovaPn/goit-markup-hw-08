@@ -7,6 +7,7 @@
 }
 
 .footer__logo{
+    display: flex;
     margin-bottom: 20px;    
     color:$accent;
     font-family: 'Raleway';
@@ -163,8 +164,7 @@
 .footer__address--margin{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-left: 76px;
+    align-items: center;    
     margin-bottom: 60px;
 }
 .footer__address--align{
@@ -173,9 +173,7 @@
     align-items: center;
 }
 
-
-
-.footer__headings--position{
+.footer__social-links{
     margin-left: 165px;   
     align-items: center;
 }
@@ -194,35 +192,49 @@
     flex-direction: column;
     align-items: center;
 }
-
-
 }
 
+@media screen and (min-width: 1200px) {
 
+    .footer__logo {
+        align-items: flex-start;
+    }
 
+    .footer__address--margin{
+        margin-bottom: 0;
+        align-items: flex-start;
+    }
 
+    .footer__address--align {
+        align-items: flex-start;
+    }
 
+    .footer__headings{
+        justify-content: start;
+    }
 
+    .footer__social-links {
+            margin-left: 70px;
+        }
 
+    .mailing-list--position{
+        margin-left: auto;
+    }
 
+    .mailing-list__input {
+            width: 358px;
+            margin-bottom: 0;
+        }
+    .mailing-list__button {
 
+        margin-left: 10px;
+        
+        &--position {
+            flex-direction: row;                  
+        }
+    }    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
