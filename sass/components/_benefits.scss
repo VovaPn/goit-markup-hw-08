@@ -35,7 +35,10 @@ line-height: 1.71;
 .benefits>li:not(:last-of-type){
     margin-bottom: 30px;
 }
-
+.benefits__heading{
+    display: flex;
+    justify-content: center;
+}
 }
 
 @media screen and (min-width: 768px) and (max-width:1199px) {

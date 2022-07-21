@@ -14,10 +14,10 @@
     <header class="header">
         <div class="container header__nav">
             <a href="./index.html" class="header__logo">Web<span class="header__logo--second-color">Studio</span></a>
-        <button type="button" class="menu__button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+        <button type="button" class="menu__button is-open" aria-expanded="false" data-menu-button>
             <svg class="header__menu-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
-                <use   class="icon-cross__header" href="./image/symbol-defs.svg#icon-cross"></use>
-                <use   class="icon-menu" href="./image/symbol-defs.svg#icon-menu"></use>
+                <use   class="icon-cross__header" href="./image/symbol-defs.svg#icon-cross" ></use>
+                <use   class="icon-menu" href="./image/symbol-defs.svg#icon-menu" width="24" height="16"></use>
             </svg>
         </button>
         
@@ -165,7 +165,7 @@
             <source  srcset="./image/team480_1.jpg 1x, ./image/team480_1@2x.jpg 2x" media="(max-width:767px)">
             <source srcset="./image/team768_1.jpg 1x, ./image/team768_1@2x.jpg 2x" media="(min-width:768px) and (max-width:1199px)">
             <source srcset="./image/team1200_1.jpg 1x, ./image/team1200_1@2x.jpg 2x" media="(min-width:1200px)">            
-            <img srcset="./image/team480_1.jpg 480w, ./image/team480_1@2x.jpg 960w" src="./image/team480_1.jpg" alt="Игорь Демьяненко">
+            <img src="./image/team480_1.jpg" alt="Игорь Демьяненко">
             </picture>               
             <div class="team__card">
             <h3 class="team__heading">Игорь Демьяненко</h3>
@@ -208,8 +208,7 @@
                     <source srcset="./image/team768_2.jpg 1x, ./image/team768_2@2x.jpg 2x"
                         media="(min-width:768px) and (max-width:1199px)">
                     <source srcset="./image/team1200_2.jpg 1x, ./image/team1200_2@2x.jpg 2x" media="(min-width:1200px)">
-                    <img srcset="./image/team480_2.jpg 480w, ./image/team480_2@2x.jpg 960w" src="./image/team480_2.jpg"
-                        alt="Ольга Репина">
+                    <img src="./image/team480_2.jpg" alt="Ольга Репина">
                 </picture>
                 <div class="team__card">
                  <h3 class="team__heading">Ольга Репина</h3>
@@ -254,7 +253,7 @@
                     <source srcset="./image/team768_3.jpg 1x, ./image/team768_3@2x.jpg 2x"
                         media="(min-width:768px) and (max-width:1199px)">
                     <source srcset="./image/team1200_3.jpg 1x, ./image/team1200_3@2x.jpg 2x" media="(min-width:1200px)">
-                    <img srcset="./image/team480_3.jpg 480w, ./image/team480_3@2x.jpg 960w" src="./image/team480_1.jpg"
+                    <img src="./image/team480_1.jpg"
                         alt="Николай Тарасов">
                 </picture>
                 <div class="team__card">
@@ -299,8 +298,7 @@
                     <source srcset="./image/team768_4.jpg 1x, ./image/team768_4@2x.jpg 2x"
                         media="(min-width:768px) and (max-width:1199px)">
                     <source srcset="./image/team1200_4.jpg 1x, ./image/team1200_4@2x.jpg 2x" media="(min-width:1200px)">
-                    <img srcset="./image/team480_4.jpg 480w, ./image/team480_4@2x.jpg 960w" src="./image/team480_1.jpg"
-                        alt="Михаил Ермаков">
+                    <img src="./image/team480_1.jpg" alt="Михаил Ермаков">
                 </picture>
                 <div class="team__card">
                 <h3 class="team__heading">Михаил Ермаков</h3>
@@ -453,9 +451,10 @@
     
     <form class="mailing-list--position" autocomplete="on">
         <p class="footer__headings">Подпишитесь на рассылку</p>
-        <label for="email"></label>
+        
        <div class="mailing-list__button--position">
-        <input class="mailing-list__input" type="email" name="email" placeholder="E-mail">
+        <label for="email"></label>
+        <input class="mailing-list__input" type="email" id="email" name="email" placeholder="E-mail">
         <button class="mailing-list__button">Подписаться
             <span class="mailing-list__icon">
             <svg width="24" height="24" class="">
@@ -490,7 +489,7 @@
                     <svg width="12" height="12" class="form__input-icon">
                         <use href="./image/symbol-defs.svg#icon-person"></use>
                     </svg>
-                    <input class="form__input" type="text" name="username" placeholder=" " />
+                    <input class="form__input" type="text" id="username" name="username" placeholder=" " />
                 </div>
 
                 <label for="phone-number" class="form__label">Телефон</label>
@@ -498,20 +497,20 @@
                     <svg width="13" height="13" class="form__input-icon">
                         <use href="./image/symbol-defs.svg#icon-phone"></use>
                     </svg>
-                    <input class="form__input" type="tel" name="phone-number" required>
+                    <input class="form__input" type="tel" id="phone-number" name="phone-number" required>
                 </div>
 
-                <label for="email" class="form__label">Почта</label>
+                <label for="email2" class="form__label">Почта</label>
                 <div class="form__field">
                     <svg width="15" height="12" class="form__input-icon">
                         <use href="./image/symbol-defs.svg#icon-email"></use>
                     </svg>
-                    <input class="form__input" type="email" name="email">
+                    <input class="form__input" id="email2" type="email" name="email">
                 </div>
 
 
                 <label for="textarea" class="form__label">Комментарий</label>
-                <textarea class="text-area" name="textarea" rows="" placeholder="Введите текст"></textarea>
+                <textarea class="text-area" name="textarea" id="textarea" rows="5" placeholder="Введите текст"></textarea>
 
                 <div class="checkbox--margin">
                     <label class="chek-box__text" for="label-text">
